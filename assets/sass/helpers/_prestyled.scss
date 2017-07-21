@@ -1,0 +1,28 @@
+@import '../helpers/mixins';
+
+
+.mo-margin-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header-links {
+	a {
+		font-family: "ProximaNova";
+		text-decoration: none;
+		@include setLinkSelectorStyle {
+			color: $MAIN_BLACK_HEADER;
+		}
+	}
+
+	a.active {
+		@include setLinkSelectorStyle {
+			color: $MAIN_ORANGE_HEADER;
+		}
+	}
+
+	a:hover {
+		color: $MAIN_ORANGE_HEADER;
+	}
+}

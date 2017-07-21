@@ -1,0 +1,17 @@
+{
+  "name": "handyed",
+  "version": "0.0.1",
+  "description": "Handyed frontend",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^2.6.1",
+    "bourbon": "^4.3.4",
+    "eyeglass": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lzdyd",
+  "license": "ISC"
+}

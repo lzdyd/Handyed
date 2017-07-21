@@ -1,0 +1,29 @@
+@import "layout/header";
+//@import "layout/footer";
+//@import "helpers/variables";
+//@import 'helpers/prestyled';
+//@import 'helpers/mixins';
+@import 'fonts/fonts';
+@import 'pages/landing';
+
+//Bourbon
+@import "../bourbon/_bourbon.scss";
+
+html {
+	font-size: 16px;
+	height: 3000px;
+}
+.clearfix:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+.no-margin-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.typed-cursor {
+	display: none;
+}

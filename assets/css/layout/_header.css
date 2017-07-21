@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url("../fonts/Proxima Nova/Proxima Nova Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/Proxima Nova/Proxima Nova Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNovaRegularItalic";
+  src: url("../fonts/Proxima Nova/Proxima Nova Regular Italic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNovaLightItalic";
+  src: url("../fonts/Proxima Nova/Proxima Nova Light Italic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNovaBoldItalic";
+  src: url("../fonts/Proxima Nova/Proxima Nova Bold Italic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../fonts/Century Gothic/Century Gothic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+.mo-margin-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+header.page-header {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0; }
+  @media (min-width: 768px) {
+    header.page-header .container {
+      width: 750px; } }
+  @media (min-width: 1115px) {
+    header.page-header .container {
+      width: 970px; } }
+  @media (min-width: 1320px) {
+    header.page-header .container {
+      width: 1170px; } }
+  header.page-header .page-header-row {
+    height: 1218px;
+    line-height: 124px; }
+  header.page-header .header-social-buttons li {
+    display: inline-block; }
+    header.page-header .header-social-buttons li:not(:first-child) {
+      margin-left: 37px; }
+    header.page-header .header-social-buttons li i.fa {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      color: #fff; }
+    header.page-header .header-social-buttons li i.fa-linkedin {
+      color: #ffd740; }
+  header.page-header .topnav {
+    position: relative;
+    transition: all .5s; }
+    header.page-header .topnav .topnav-list-collapse {
+      display: block;
+      width: 64px;
+      height: 64px;
+      padding: 32px 25px;
+      background-color: #fff;
+      border-radius: 30px 0 0 30px;
+      box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25); }
+      header.page-header .topnav .topnav-list-collapse i.topnav-opener {
+        position: relative;
+        display: block;
+        height: 3px;
+        width: 24px;
+        background-color: #000; }
+        header.page-header .topnav .topnav-list-collapse i.topnav-opener::before, header.page-header .topnav .topnav-list-collapse i.topnav-opener::after {
+          position: absolute;
+          content: '';
+          top: -6px;
+          height: 3px;
+          width: 24px;
+          background-color: #000; }
+        header.page-header .topnav .topnav-list-collapse i.topnav-opener::after {
+          top: 6px; }
+    header.page-header .topnav .topnav-list {
+      display: none;
+      position: relative;
+      top: -65px;
+      left: 50px;
+      background-color: #fff;
+      margin: 0;
+      padding: 15px 35px;
+      line-height: 40px;
+      transition: all .5s; }
+    header.page-header .topnav a {
+      font-family: 'RobotoMedium';
+      font-size: 1.25rem;
+      color: #546e7a; }
+  header.page-header .topnav.active {
+    right: 50px; }
+    header.page-header .topnav.active .topnav-list {
+      display: block; }
+  @media (min-width: 1000px) {
+    header.page-header .logo {
+      padding-left: 0;
+      margin-left: 0; } }
+  header.page-header .logo a {
+    font-size: 2.5rem;
+    color: #ffd740;
+    font-family: 'RobotoMedium';
+    text-decoration: none; }
+  header.page-header .header-social-buttons i {
+    color: black; }
+  header.page-header .topnav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px; }
+
+.landing-layout {
+  margin-top: 350px;
+  font-family: "RobotoLight"; }
+  .landing-layout .landing-h2 {
+    font-size: 3.5rem;
+    color: #fefefe;
+    font-family: "RobotoMedium"; }
+  .landing-layout .landing-paragraph {
+    font-size: 1.5rem;
+    color: #fefefe; }
+  .landing-layout .landing-left-column {
+    padding-right: 50px; }
+  .landing-layout .landing-right-column {
+    padding-left: 50px;
+    direction: rtl; }
+  .landing-layout .landing-button {
+    font-size: 1.5rem;
+    color: #ffd740;
+    text-decoration: none; }

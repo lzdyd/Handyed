@@ -1,0 +1,79 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	    -ms-transform: $transform; 
+	        transform: $transform;
+}
+
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+		 -o-transition: $transition;
+            transition: $transition;
+}
+
+@mixin box-sizing($box-sizing) {
+	-webkit-box-sizing: $box-sizing;
+		 -moz-box-sizing: $box-sizing;   
+					box-sizing: $box-sizing;
+}
+
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+// Cross browser opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Links <a>
+$a-tags: 'a, a:active, a:hover, a:visited'; // usage: #{$a-tags} {...styles...}
+
+@mixin setLinkSelectorStyle {
+  &:hover, &:link, &:active, &:visited {
+    @content;
+  }
+}
+
+@mixin linxSingle($color) {
+  a {
+    color: $color;
+    &:visited {
+      color: $color;
+    }
+    &:hover {
+      color: $color;   
+    }
+    &:active {
+      color: $color;
+    }
+  }
+}
+@mixin linx($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
